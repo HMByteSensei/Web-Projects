@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to fill this form</p>
+    </section>
+   
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input id="name" type="text" name="name" 
+          required placeholder="Enter your name..." />
+        </label>
+
+        <label for="email" id="email-label">Email
+          <input type="email" id="email" name="email"
+          required placeholder="Enter your email..."/>
+        </label>
+
+        <label for="number" id="number-label">Age
+          <input type="number" id="number" name="age" 
+          min="10" max="100" placeholder="Age" />
+        </label>
+        <label for="dropdown ">What is your role?
+          <select id="dropdown" name="role">
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you like this site?</legend>
+          <label for="definetely"><input type="radio" id="definetely" name="like-site" value="definetely" class="inline" checked> Definetely</label>
+          <label for="maybe"><input type="radio" id="maybe" name="like-site" value="maybe" class="inline" > Maybe</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What types of vacation destinations do you prefer? (Select all that apply)</legend>
+        <label for="mountain"><input type="checkbox" id="mountain" name="travel" value="Mountain retreats" class="inline"> Mountain retreats</label>
+        <label for="urban"><input type="checkbox"
+        id="urban" name="travel" value="Urban area" class="inline"> Urban area</label>
+        <label>
+          <input type="checkbox" name="travel" value="Adventure" class="inline"> Adventure travel
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestion">Any comments or suggestions?
+          <textarea id="suggestion" name="suggestion" rows="3" cols="30" placeholder="Enter your suggestions here..."></textarea>
+        </label>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
