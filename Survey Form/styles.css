@@ -1,0 +1,66 @@
+html {
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,159,1) 100%);
+}
+
+body {
+  margin: 1% 20%;
+  min-width: 300px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+#title {
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+#description {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+form {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  backdrop-filter: blur(15px);
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+label, input, select, textarea, legend {
+  display: block;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+input, select, textarea {
+  width: 90%;
+  margin-top: 0.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.inline {
+  display: inline;
+  margin: 0 0.5em 0 0;
+  width: unset;
+  vertical-align: center;
+}
+
+button {
+  display: block;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.2rem;
+  min-width: 300px;
+}
