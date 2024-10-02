@@ -29,7 +29,8 @@ To view my portfolio locally, follow these steps:
 
 2. **Navigate to the project directory**
 
-3. **Open index.html in your web browser to view the portfolio.**ž
+3. **Open index.html in your web browser to view the portfolio.**
 
+---
 
 Thank you for visiting my portfolio! 💖 I look forward to connecting with fellow developers and exploring new opportunities.
