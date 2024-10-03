@@ -1,0 +1,114 @@
+:root {
+  --rem3: 48px;
+  --rem2-0: 40px;
+  --rem2: 32px;
+  --rem5: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #303841;
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: red;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-right: 0.5rem;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  font-size: var(--rem2);
+  color: white;
+}
+
+#welcome-section, #contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: var(--rem5);
+}
+
+p {
+  font-size: var(--rem2);
+  color: orange;
+}
+
+legend {
+  font-size: var(--rem2-5);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+fieldset {
+  margin-bottom: 6rem;
+}
+
+#profile-link {
+  font-size: var(--rem3);
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --rem3: 24px;
+    --rem2-0: 20px;
+    --rem2: 16px;
+    --rem5: 40px;
+  }
+}
